@@ -1,0 +1,51 @@
+# Java / Maven / Gradle
+target/
+**/target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+build/
+**/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.mvn/wrapper/maven-wrapper.jar
+**/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+HELP.md
+
+# Node.js / React
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.env*.local
+**/.env*.local
+
+# IDE / OS
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+.DS_Store
+Thumbs.db
+
+# 機密情報（DBパスワードやAPIキーなど）
+.env
+**/.env
+application-local.properties
+**/application-local.properties
+application-local.yml
+**/application-local.yml
