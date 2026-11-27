@@ -1,7 +1,6 @@
 package com.example.backend.controller;
 
 import com.example.backend.entity.Product;
-import com.example.backend.repository.ProductRepository;
 import com.example.backend.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
