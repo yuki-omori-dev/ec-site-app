@@ -1,0 +1,11 @@
+### 商品を新規登録するテスト
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "シンプル白Tシャツ",
+  "description": "綿100%の着心地の良いTシャツです",
+  "price": 2500,
+  "stock": 50,
+  "imageUrl": "https://example.com"
+}
