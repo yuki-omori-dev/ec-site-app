@@ -31,4 +31,12 @@ public class ProductService {
         }
         return productRepository.save(product);
     }
+
+    // 商品IDで商品を取得する業務処理
+    @Transactional(readOnly = true)
+    public Product getProductById(Long id) {
+        return productRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("指定された商品が見つかりません。ID: " + id));
+    }
+
 }
