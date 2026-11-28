@@ -25,4 +25,10 @@ public class ProductController {
     public Product createProduct(@RequestBody Product product) {
         return productService.createProduct(product);
     }
+
+    // 商品IDで商品を取得するAPI(GET http://localhost:8080/api/products/{id})
+    @GetMapping("/{id}")
+    public Product getProductById(@PathVariable Long id) {
+        return productService.getProductById(id);
+    }
 }
